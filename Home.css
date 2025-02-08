@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/b.gif);
+    background-repeat: repeat;
+}
+/* The First Div */
+.intro {
+    width: 100%;
+    background-color: black;
+    height:85vh;
+
+}
+
+header {
+    height:35% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: flex-end; /* Moves content to the right */
+}
+
+header h1 {
+
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color:white;
+    max-width: 600px; /* Adjust width to force a line break */
+    white-space: normal;
+    font-family: "Dancing Script", serif;
+}
+
+
+
+
+a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    
+    background-color: rgb(170, 95, 164);
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    margin-right: 300px;
+    background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/d.gif);
+    background-repeat: repeat;
+}
+
+figure {
+    margin: 0;
+    height: 65%;
+}
+
+.intro_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    object-position:top;/* Ensures the lower part of the image appears */
+}
+
+
+
+
+/* The Second Div */
+.MadeForYou
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center; /* Centers content vertically */
+    align-items: flex-end; /* Moves content to the right */
+
+
+}
+.MadeForYou hgroup ,.PopularCake hgroup{
+    font-size: 3.5rem;
+    font-weight: bolder;
+
+    padding-bottom: 31px;
+    font-size: 3.5em;
+    text-align: center;
+    
+    white-space: normal;
+    width: 65%;
+    margin: 0 auto; 
+}
+.MadeForYou hgroup span,.PopularCake hgroup span
+{
+    color:rgb(170, 95, 164);
+    font-family: "Dancing Script", serif;
+
+}
+.MadeForYou hgroup h2 ,.PopularCake hgroup
+{
+    color:#533537;
+    font-family: "Dancing Script", serif;
+
+}
+.MadeForYou hgroup h2::after ,.PopularCake hgroup h2::after{
+    content: ""; 
+    display: block;
+    width: 200px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    background: url("./images/line.png") no-repeat center;
+    background-size: contain;
+    margin: 10px auto; /* Centers the line */
+}
+
+.Paragraph
+{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2.3;
+    text-align: center;
+    font-size: small;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    color:#533537;
+
+}
+.MadeForYou hgroup p a {
+    margin-left:300px; 
+}
+
+.MadeForYou figure{
+    width: 30%;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+/* The Third Div */
+
+
+.WorKWith
+{
+    background-color: #533537;
+    width: 100%;
+    background-size: cover;
+    background: url(https://html.bolvosites.com/site-templates/cakery/images/backgrounds/a.jpg) no-repeat fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.WorKWith h2{
+    width: 100%;
+    font-size: 4rem;
+    font-family: "Dancing Script", serif;
+    color: white;
+    
+
+}
+.WorKWith p{
+    margin-bottom: 50px;
+    margin-left: 250px;
+}
+
+
+/* The fourth Div */
+
+.PopularCake{
+    
+}
+.PopularCake article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
