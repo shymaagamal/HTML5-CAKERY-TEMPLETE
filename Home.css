@@ -2,69 +2,82 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/b.gif);
-    background-repeat: repeat;
+    background-repeat: repeat;    
+    overflow-x: hidden; 
 }
 /* The First Div */
-.intro {
+/* .intro {
     width: 100%;
-    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
     height:90vh;
 
+} */
+
+.intro {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Push content to the right */
+    height:70vh;    
+    background-color: black;
+    overflow: hidden;
 }
 
 header {
-    height:50% ;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: flex-end; /* Moves content to the right */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%; 
 }
 
 header h1 {
-
+    margin: 0;
+    padding: 0;
     font-size: 3.5rem;
     font-weight: bolder;
     color:white;
-    max-width: 600px; /* Adjust width to force a line break */
+    max-width: 600px; 
     white-space: normal;
     font-family: "Dancing Script", serif;
+    
 }
+header p,a {
+    padding: 10px 5px;
 
-
-
-
-a {
-    padding: 30px 20px;
     font-size: 1rem;
     cursor: pointer;
-    
     background-color: rgb(170, 95, 164);
     color: white;
     font-family: "Roboto Flex", serif;
     border: none;
     border-radius: 5px;
-    margin-right: 300px;
     background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/d.gif);
     background-repeat: repeat;
-    text-decoration: none
-
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
 }
 a:hover{
     text-decoration: underline;
 }
 
-figure {
+.intro_image {
+    width: 100%;  
+    height: 100%; 
+    overflow: hidden;
+    display: flex;
     margin: 0;
-    height: 50%;
 }
-
 .intro_image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
-    overflow: hidden;
-    object-position:top;/* Ensures the lower part of the image appears */
+    object-position: top;
+    
 }
 
 
@@ -74,24 +87,22 @@ figure {
 .MadeForYou
 {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center; /* Centers content vertically */
-    align-items: flex-end; /* Moves content to the right */
+    flex-wrap: wrap;
+    align-items:flex-end;
+    justify-content: center;
+    justify-items: center;
+
 
 
 }
-.MadeForYou hgroup ,.PopularCake hgroup{
+
+
+.MadeForYou hgroup,.WorKWith p,.ViewProduct p,.PopularCake hgroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 3.5rem;
     font-weight: bolder;
-
-    padding-bottom: 31px;
-    font-size: 3.5em;
-    text-align: center;
-    
-    white-space: normal;
-    width: 65%;
-    margin: 0 auto; 
 }
 .MadeForYou hgroup span,.PopularCake hgroup span
 {
@@ -105,41 +116,26 @@ figure {
     font-family: "Dancing Script", serif;
 
 }
-.MadeForYou hgroup h2::after ,.PopularCake hgroup h2::after{
-    content: ""; 
-    display: block;
-    width: 200px; /* Adjust size as needed */
-    height: 20px; /* Adjust size as needed */
-    background: url("./images/line.png") no-repeat center;
-    background-size: contain;
-    margin: 10px auto; /* Centers the line */
-}
-
 .Paragraph
 {
     max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
     line-height: 2.3;
-    text-align: center;
-    font-size: small;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 300;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     color:#533537;
+    text-align: center;
 
 }
-.MadeForYou hgroup p a {
-    margin-left:300px; 
+.MadeForYou hgroup h2::after{
+    content: ""; 
+    display: block;
+    height: 20px;
+    background: url("./images/line.png") no-repeat center;
+    background-size: contain;
 }
 
-.MadeForYou figure{
-    width: 30%;
-    justify-content: center;
-    margin-bottom: 30px;
-
-}
 
 /* The Third Div */
 
@@ -147,12 +143,9 @@ figure {
 .WorKWith
 {
     background-color: #533537;
-    width: 100%;
-    background-size: cover;
     background: url(https://html.bolvosites.com/site-templates/cakery/images/backgrounds/a.jpg) no-repeat fixed;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.2);
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,42 +160,50 @@ figure {
     
 
 }
-.WorKWith p,.ViewProduct{
-    
-    margin-bottom: 50px;
-    margin-left: 300px;
-    margin-top: 50px;
-}
-
 
 /* The fourth Div */
 
 .PopularCake{
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-.PopularCake article{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 80%;
-    justify-content: center;
-    justify-items: center;
-    margin: auto;
-    background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/b.gif);
-    background-repeat: repeat;
 }
 .PopularCake article h3{
     color:#533537;
     text-align: center;
 }
-.cakeItem:hover{
+.PopularCake hgroup {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PopularCake article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/b.gif);
+}
+
+.PopularCake article div{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+}
+.PopularCake article img{
+width: 100%;
+}
+.PopularCake article div:hover{
     background-color:rgb(170, 95, 164) ;
     background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/d.gif);
     background-repeat: repeat;
+    transform: scale(0.9);
 
 }
+
 /* Fifth Div */
 .customer
 {
@@ -210,25 +211,86 @@ figure {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    
     
 }
-.customerReview
+.customer span
 {
-    margin: auto;
-    justify-items: center;
+    font-family: "Satisfy", serif;
+    font-size: 2.5em;
+    color: rgb(223, 219, 222);
+    border-top: 2px solid;
+    border-bottom: 2px solid;
 }
 .CustomerPara
 {
     max-width: 700px;
     color: rgb(223, 219, 222);
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.8;
 }
-.customerInfo span
-{
-    font-family: "Satisfy", serif;
-    font-size: 2.5em;
-    color: rgb(223, 219, 222);
-    padding-top: 2px;
-    padding-bottom: 3px;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+.customer figure {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.customer figure img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+/* grid style  */
+
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+  
+@media (min-width: 500.99px) and (max-width: 911px) {
+    /* col_num /12 *100 */
+
+
+    .col-md-3 {
+      width: 25%;
+    }
+
+   
+    .col-md-7 {
+      width: 58.33%;
+    }
+   
+    .col-md-12 {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+
+    .col-sm-3 {
+      width: 25%;
+    }
+
+    .col-sm-7 {
+      width: 58.33%;
+    }
+  
+    .col-sm-12 {
+      width: 100%;
+    }
+  }
+  
