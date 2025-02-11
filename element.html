@@ -7,28 +7,42 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="element.css" />
   </head>
   <body>
     <header class="top-header">
       <nav class="navbar">
-        <!-- <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Dropdown</a></li>
-          <li><a href="#">Blog</a></li>
-          <li class="logo">
-            <img src="logo.png" alt="Bakery Logo" />
+        <ul>
+          <li class="col-1 col-md-2 col-sm-1">
+            <a href="./Home.html">Home</a>
           </li>
-          <li><a href="#">Blog Details</a></li>
-          <li><a href="#">Elements</a></li>
-          <li><a href="#">Shortcodes</a></li>
-        </ul> -->
+          <li class="col-1 col-md-2 col-sm-1"><a href="#">Dropdown</a></li>
+          <li class="col-1 col-md-2 col-sm-1"><a href="#">Blog</a></li>
+          <!-- LOGO CENTERED IN NAV -->
+          <!-- <li class="logo"> -->
+          <img id="nav-img" src="./images/logo.png" alt="Bakery Logo" />
+          <!-- </li> -->
+          <li class="col-1 col-md-2 col-sm-1" style="width: auto">
+            <a href="#">Blog Details</a>
+          </li>
+          <li class="col-1 col-md-2 col-sm-1">
+            <a href="./element.html">Elements</a>
+          </li>
+          <li class="col-1 col-md-2 col-sm-1">
+            <a href="./shortcodes.html">Shortcodes</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <div class="first">
+    <!-- FIRST SECTION -->
+    <section class="first">
       <header class="intro">
-        <h1 class="col-5 col-md-6 col-sm-11">
+        <h1 class="col-5 col-md-6 col-sm-12">
           Curabitur <br />
           Posuere Nibh vel <br />
           Quam
@@ -42,8 +56,9 @@
           nunc.
         </p>
       </header>
-    </div>
+    </section>
 
+    <!-- INTRO IMAGE SECTION -->
     <div class="intro-img">
       <img src="./images/1300x701.gif" alt="Intro Image" />
     </div>
@@ -373,26 +388,86 @@
       <div class="card col-2 col-md-5 col-sm-12">
         <div class="card-image">
           <img src="./images/chef-1.gif" alt="chef-1" />
+          <div class="overlay">
+            <div class="chef-info">
+              <h3>David White</h3>
+              <p>Chef</p>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook-f"></i></a>
+              <a href="#"><i class="fa fa-google"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="card col-2 col-md-5 col-sm-12">
         <div class="card-image">
           <img src="./images/chef-2.gif" alt="chef-2" />
+          <div class="overlay">
+            <div class="chef-info">
+              <h3>lucy White</h3>
+              <p>Chef</p>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook-f"></i></a>
+              <a href="#"><i class="fa fa-google"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="card col-2 col-md-5 col-sm-12">
         <div class="card-image">
           <img src="./images/chef-3.gif" alt="chef-3" />
+          <div class="overlay">
+            <div class="chef-info">
+              <h3>Nancy White</h3>
+              <p>Chef</p>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook-f"></i></a>
+              <a href="#"><i class="fa fa-google"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="card col-2 col-md-5 col-sm-12">
         <div class="card-image">
           <img src="./images/chef-4.gif" alt="chef-4" />
+          <div class="overlay">
+            <div class="chef-info">
+              <h3>Charly White</h3>
+              <p>Chef</p>
+            </div>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook-f"></i></a>
+              <a href="#"><i class="fa fa-google"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="title2">
+      <h2 class="header-a"><span class="scheme-b">Are you </span> Ready ?</h2>
+      <img />
+    </div>
+
+    <div class="address-box col-3 col-md-5 col-sm-12">
+      <p>244 5th Avenue. Suite 1735<br />New York, N.Y.<br />USA, 10001</p>
+      <hr />
+      <p>555. 785.8965<br />555. 897.4321</p>
+      <hr />
+      <p>office//invisio/com<br />cakes//invisio/com</p>
+    </div>
+
+    <br />
+    <br />
   </body>
 </html>
