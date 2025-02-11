@@ -1,5 +1,5 @@
 body {
-    background-image: url(background.png);
+    background-image: url(./Images/background.png);
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,7 +22,7 @@ hr {
     position: absolute;
     width: 100%;
     margin-top: -25px;
-    background: url('curvedLines.png') repeat-x;
+    background: url('./Images/curvedLines.png') repeat-x;
     display: flex;
     justify-content: center;
     z-index: 1000;
@@ -51,7 +51,7 @@ hr {
 .navbar ul li a:hover {
     color: #8A4F7D;
     cursor: pointer;
-    background-image: url(purpleCurve.png);
+    background-image: url(./Images/purpleCurve.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -63,7 +63,7 @@ hr {
 }
 
 .breadBG {
-    background-image: url(headerBG.gif);
+    background-image: url(./Images/headerBG.gif);
     height: 500px;
     width: 100%;
     background-size: cover;
@@ -295,14 +295,14 @@ hr {
     position: relative;
     padding: 13px 15px;
     color: white;
-    background-image: url(purple.gif);
+    background-image: url(./Images/purple.gif);
 }
 .inactive-list{
     display:none;
     position: relative;
     padding: 13px 15px;
     color: white;
-    background-image: url(purple.gif);  
+    background-image: url(./Images/purple.gif);  
 }
 .inactive-list :hover{
     display: block;
@@ -564,7 +564,7 @@ background: white;
 }
 
 .messageOne {
-    background-image: url(purple.gif);
+    background-image: url(./Images/purple.gif);
     color: white;
     margin-bottom: 10px;
 }
@@ -684,15 +684,15 @@ background: white;
 }
 
 .listFour ul li.a::before {
-    background-image: url("phone.png");
+    background-image: url("./Images/phone.png");
 }
 
 .listFour ul li.b::before {
-    background-image: url("mail.png");
+    background-image: url("./Images/mail.png");
 }
 
 .listFour ul li.c::before {
-    background-image: url("location.png");
+    background-image: url("./Images/location.png");
 }
 /******************************Responsivensess********************************/
 @media (max-width: 1024px) {
