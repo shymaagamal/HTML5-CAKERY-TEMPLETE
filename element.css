@@ -389,7 +389,7 @@ p {
 
 .chef-info {
   width: 100%;
-  height: 100%; /* Initially take full height of .overlay */
+  height: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -414,7 +414,7 @@ p {
 
 .social-icons {
   width: 100%;
-  height: 0; /* Initially hidden */
+  height: 0;
   opacity: 0;
   display: flex;
   justify-content: center;
@@ -431,17 +431,16 @@ p {
   transition: color 0.3s ease-in-out;
 }
 
-/* Hover Effect */
 .card-image:hover .overlay {
   height: 30%;
 }
 
 .card-image:hover .chef-info {
-  height: 50%; /* Chef info now takes 50% */
+  height: 50%;
 }
 
 .card-image:hover .social-icons {
-  height: 50%; /* Social icons now take 50% */
+  height: 50%;
   opacity: 1;
 }
 
@@ -449,9 +448,31 @@ p {
   color: rgb(115, 0, 255);
 }
 
-/* bubble box  */
+.btn-2 {
+  display: inline-block;
+  background-color: #a55da6;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5px;
+  padding: 18px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-2:hover {
+  background-color: #5c2452;
+  transform: scale(1.05);
+}
+
+/* Bubble Box */
 .address-box {
-  width: 280px;
+  width: 200px;
   background: linear-gradient(to bottom, #b24bb8, #923b98, #7a2d82);
   color: white;
   font-family: Arial, sans-serif;
@@ -459,44 +480,130 @@ p {
   text-align: center;
   padding: 20px;
   position: relative;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  overflow: hidden; /* Prevents scrolling */
+  box-shadow: 15px 18px 30px rgba(0, 0, 0, 0.6); /* Stronger shadow */
   margin: 20px;
+  gap: 20px;
+  max-width: 100%;
+  overflow: visible;
 }
 
-/* Separating Lines */
 .address-box hr {
   border: none;
   height: 1px;
-  background: rgba(255, 255, 255, 0.3);
-  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.4);
+  margin: 12px 0;
 }
 
-/* Speech Bubble Triangle */
+/* Triangle */
 .address-box::after {
   content: "";
   position: absolute;
-  bottom: -15px;
-  right: 30px;
+  bottom: -18px;
+  right: 0px;
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #7a2d82;
+  border-top: 20px solid #7a2d82;
+  border-left: 20px solid transparent;
 }
 
 /* Triangle Shadow */
 .address-box::before {
   content: "";
   position: absolute;
-  bottom: -18px;
-  right: 29px;
+  bottom: -24px;
+  right: 1px;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 16px solid rgba(0, 0, 0, 0.2);
+  border-top: 25px solid rgba(0, 0, 0, 0.2);
+  border-left: 25px solid transparent;
+  filter: blur(2px);
 }
+
+/* Footer Styling */
+
+.bottem-footer {
+  position: relative;
+  width: 100%;
+  background: url("Images/curvedLines.png") repeat-x;
+  background-color: #aa5fa4;
+  padding: 60px 20px;
+  color: whitesmoke;
+}
+
+/* Footer Grid Layout */
+
+.footer-continer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* Styling for Lists */
+.footer-continer div {
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.footer-continer h2 {
+  font-size: clamp(20px, 2.5vw, 28px);
+  margin: 10px 0;
+  color: #000;
+}
+
+.footer-continer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-continer ul li {
+  font-size: clamp(14px, 2vw, 18px);
+  padding: 6px 0;
+}
+
+/* Subscribe Section */
+.Subscribe label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.Subscribe input {
+  background-color: #873a81;
+  border-radius: 7px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  color: white;
+}
+
+.Subscribe input::placeholder {
+  color: whitesmoke;
+}
+
+/* Social Media Icons */
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+}
+
+.logos ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logos ul li img {
+  width: clamp(40px, 8vw, 80px);
+  height: auto;
+}
+
 /* grid style  */
 .col-1 {
   width: 8.33%;
