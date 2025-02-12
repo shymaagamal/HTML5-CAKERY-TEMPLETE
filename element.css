@@ -9,12 +9,12 @@
 
 body {
   font-family: "Dancing Script", serif;
-  background: url(./images/b.gif);
+  background: url(./Images/b.gif);
 }
 
 /* NAVBAR */
 .top-header {
-  background: url(./images/curvedLines.png) repeat-x;
+  background: url(./Images/navBg.png) repeat-x;
   width: 100%;
   position: absolute;
   top: 0;
@@ -41,7 +41,7 @@ body {
 /* HOVER FIX */
 .navbar ul li a {
   text-decoration: none;
-  font-size: clamp(1.5rem, 2vw, 0.8rem); /* Responsive font size */
+  font-size: clamp(1.8rem, 2vw, 1rem); /* Responsive font size */
   font-family: "Dancing Script", cursive;
   font-weight: bold;
   color: #5a3626;
@@ -145,7 +145,7 @@ p {
   height: 19px;
   display: block;
   margin: 0 auto 0;
-  background: url(./images/sprite-a.png) 0 -191px no-repeat;
+  background: url(./Images/sprite-a.png) 0 -191px no-repeat;
   border: none;
 }
 .schema-c {
@@ -162,7 +162,7 @@ p {
   margin: 79px auto;
   padding: 90px 0 34px;
 
-  background: url(./images/img2.jpg) fixed center center no-repeat #000;
+  background: url(./Images/img2.jpg) fixed center center no-repeat #000;
   background-size: cover;
   color: #fff;
   text-align: center;
