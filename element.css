@@ -14,7 +14,7 @@ body {
 
 /* NAVBAR */
 .top-header {
-  background: url(./Images/curvedLines.png) repeat-x;
+  background: url(./Images/navBg.png) repeat-x;
   width: 100%;
   position: absolute;
   top: 0;
@@ -41,7 +41,7 @@ body {
 /* HOVER FIX */
 .navbar ul li a {
   text-decoration: none;
-  font-size: clamp(1.5rem, 2vw, 0.8rem); /* Responsive font size */
+  font-size: clamp(1.8rem, 2vw, 1rem); /* Responsive font size */
   font-family: "Dancing Script", cursive;
   font-weight: bold;
   color: #5a3626;
