@@ -41,7 +41,7 @@ body {
 /* HOVER FIX */
 .navbar ul li a {
   text-decoration: none;
-  font-size: clamp(1rem, 2vw, 0.8rem); /* Responsive font size */
+  font-size: clamp(1.5rem, 2vw, 0.8rem); /* Responsive font size */
   font-family: "Dancing Script", cursive;
   font-weight: bold;
   color: #5a3626;
@@ -389,7 +389,7 @@ p {
 
 .chef-info {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -729,5 +729,87 @@ p {
   }
   .col-sm-12 {
     width: 100%;
+  }
+}
+/* Hamburger Menu Styles */
+.hamburger-toggle {
+  display: none;
+}
+
+.hamburger-label {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.hamburger-label span {
+  width: 25px;
+  height: 3px;
+  background-color: #5a3626;
+  margin: 4px 0;
+  transition: 0.3s ease-in-out;
+}
+
+/* Media Queries for Hamburger Menu */
+@media (max-width: 911px) {
+  .hamburger-label {
+    display: flex;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+    padding-top: 60px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar ul li {
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .hamburger-toggle:checked ~ .navbar ul {
+    display: flex;
+  }
+
+  .hamburger-toggle:checked ~ .hamburger-label span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger-toggle:checked ~ .hamburger-label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-toggle:checked ~ .hamburger-label span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .hamburger-toggle:checked ~ .navbar ul {
+    overflow: hidden;
+  }
+
+  body.hamburger-open {
+    overflow: hidden;
   }
 }
