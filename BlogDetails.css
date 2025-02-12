@@ -1,0 +1,477 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Images/background.png");
+    margin-left: auto;
+    margin-right: auto;
+}
+hr {
+    margin: 78px 0 50px;
+    color: rgba(128, 128, 128, 0.336);
+}
+
+/* Header   */
+.top-header {
+    position: absolute;
+    width: 100%;
+    margin-top: 0px;
+    background: url("Images/curvedLines.png") repeat-x;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #5A3626;
+    padding-top: 10px;
+}
+
+.navbar ul li a:hover {
+    color: #8A4F7D;
+    cursor: pointer;
+    background-image: url("Images/purpleCurve.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    height: 60px;
+    cursor: pointer;
+}
+
+.Cake {
+    background-image: url("Images/Cake.png");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 30px black solid;
+}
+
+.Post-Date {
+    position: relative;
+    bottom: 17px;
+}
+
+.Post-Date ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.Post-Date ul>li {
+    padding: 15px;
+}
+
+#date {
+    background-color: #5A3626;
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 10pt;
+}
+
+#pin {
+    background-color: plum;
+}
+
+#fac {
+    background-color: #b83b9d;
+}
+
+#twit {
+    background-color: purple;
+}
+
+/**/
+
+
+.Page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Col Bar */
+.side {
+    flex: 30%;
+    padding: 20px;
+}
+h1,h3{
+    color: #7c5e60;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+}
+#body-main-p{
+    color: #7c5e60;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.deserts-num {
+    display: flex;
+    align-items: center;
+}
+
+.deserts-num ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.deserts-num ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 100px;
+}
+
+.deserts-num ul li img {
+    margin-right: 5px;
+}
+
+#num {
+    background-color: #5A3626;
+    border-radius: 80px;
+    color: #f1f1f1;
+    text-align: center;
+    min-width: 15px;
+    padding: 5px;
+    font-size: 8pt;
+}
+
+#text {
+    font-size: 10pt;
+    color: #5A3626;
+    font-weight: bold;
+}
+
+.Popular-posts {
+    display: flex;
+    align-items: center;
+}
+
+.Popular-posts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.Popular-posts ul>li>a {
+    color: #5A3626;
+    text-decoration: none;
+}
+.Popular-posts ul>li>a:hover {
+    color: #aa5fa4;
+}
+
+.Popular-posts ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.content-tags {
+    display: flex;
+    gap: 2px;
+}
+
+.content-tags ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-tags ul>li {
+    text-align: center;
+    border: 2px solid;
+    background-color: #aa5fa4;
+    padding: 3px;
+    color: #f1f1f1;
+    font-size: 9pt;
+}
+
+/*Main Content*/
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    /* Center it */
+}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: #5A3626;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    font-size: 8pt;
+}
+
+.withnobullet {
+    list-style-type: none;
+}
+#comm{
+    font-size: larger;
+}
+.Comment-container {
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+.Comment-container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+
+.Comment-container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.Comment-container a {
+    position: relative;
+    left: 110px;
+}
+
+.Comment-container-inside {
+    border-left: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 50px 60px;
+}
+
+.Comment-container-inside img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.Comment-container-inside span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.Comment-container-inside a {
+    position: relative;
+    left: 110px;
+}
+
+.leave-comment form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-style {
+    display: flex;
+    gap: 10px;
+
+}
+
+.form-data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#dataEntered {
+    width: 400px;
+    height: 50px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 4px;
+
+}
+
+textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 820px;
+    height: 150px;
+    resize: vertical;
+}
+
+#Okbtn {
+    margin-top: 25px;
+    background-color: #aa5fa4;
+    color: #fff;
+    padding: 20px;
+    width: 100px;
+    border: none;
+    border-radius: 3px;
+}
+
+.related-posts {
+    text-align: center;
+    
+}
+
+.related-posts img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#related {
+    color: #b83b9d;
+    font-size: xx-large;
+    font-family: 'Dancing Script', cursive;
+}
+
+#posts {
+    color: #5A3626;
+    font-size: xX-large;
+    font-family: 'Dancing Script', cursive;
+}
+.actual-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    width: 100%;
+}
+
+.actual-posts {
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.content-overlab {
+    position: absolute;
+    background: #5A3626;
+    color: #f1f1f1;
+    width: 150px;
+    height: auto;
+    padding: 5px;
+    font-size: 8pt;
+}
+
+.content-overlab {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background: #5A3626;
+    color: f1f1f1;
+    padding: 5px;
+}
+
+#main-desc {
+    font-size: 15pt;
+}
+
+#sub-desc {
+    font-size: 10pt;
+}
+
+/*footer*/
+.bottem-footer{
+    position:relative;
+    width: 100%;
+    background: url("Images/curvedLines.png") repeat-x;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #aa5fa4;
+    padding: 110px 0;
+}
+.footer-continer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+}
+.Popular-links ul>li::marker {
+    color: #873a81;
+}
+.Popular-links ul,
+.work-time ul,
+.Subscribe label,
+.content-info ul{
+    color: whitesmoke;
+}
+.work-time ul,
+.content-info ul{
+    list-style-type: none;
+}
+.Subscribe label{
+    display: block;
+
+}
+.Subscribe input{
+   background-color: #873a81;
+   border-radius:7px ;
+   padding: 15px;
+   width: 320px;
+   border: none;
+
+}
+.Subscribe input::placeholder{
+    color: whitesmoke;
+}
+.Subscribe i {
+    position: absolute;
+    right: 250px;
+    top:205px;
+    color: gray;
+}
+.footer-copyright{
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logos ul{
+    display: flex; 
+    list-style: none;
+    gap: 15px; 
+
+}
+.copyright {
+    text-align: right;
+    margin-right: 80px;
+    color: whitesmoke;
+    font-size: 10pt;
+}
+

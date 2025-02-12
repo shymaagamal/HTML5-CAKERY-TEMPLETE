@@ -1,0 +1,555 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/b.gif);
+    background-repeat: repeat;    
+    overflow-x: hidden; 
+}
+/* Header */
+
+.top-header {
+    position: absolute;
+    width: 100%;
+    margin-top: -25px;
+    background: url('./Images/curvedLines.png') repeat-x;
+    display: flex;
+    justify-content: center;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: clamp(16px, 2vw, 22px);
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    color: #5A3626;
+    padding-top: 10px;
+}
+.navbar ul li a:hover {
+    color: #8A4F7D;
+    cursor: pointer;
+    background-image: url(./Images/purpleCurve.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logoHeader {
+    height: 60px;
+    width: auto;
+    cursor: pointer;
+}
+
+
+/* /second div */
+
+.intro {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Push content to the right */
+    height:70vh;    
+    background-color: black;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.introHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%; 
+}
+
+.introHeader h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color:white;
+    max-width: 600px; 
+    white-space: normal;
+    font-family: "Dancing Script", serif;
+    
+}
+.introHeader p,.introHeader a, .MadeForYou a, .WorKWith a, .PopularCake a {
+    padding: 10px 5px;
+
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgb(170, 95, 164);
+    color: white;
+    font-family: "Roboto Flex", serif;
+    border: none;
+    border-radius: 5px;
+    background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/d.gif);
+    background-repeat: repeat;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.intro_image {
+    width: 100%;  
+    height: 100%; 
+    overflow: hidden;
+    display: flex;
+    margin: 0;
+}
+.intro_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    
+}
+
+
+
+
+/* The Third Div */
+.MadeForYou
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-end;
+    justify-content: center;
+    justify-items: center;
+
+
+
+}
+
+
+.MadeForYou hgroup,.WorKWith p,.PopularCake hgroup ,.ViewProduct p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.MadeForYou hgroup span,.PopularCake hgroup span
+{
+    color:rgb(170, 95, 164);
+    font-family: "Dancing Script", serif;
+
+}
+.MadeForYou hgroup h2 ,.PopularCake hgroup
+{
+    color:#533537;
+    font-family: "Dancing Script", serif;
+
+}
+.Paragraph
+{
+    max-width: 500px;
+    line-height: 2.3;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    color:#533537;
+    text-align: center;
+
+}
+.MadeForYou hgroup h2::after{
+    content: ""; 
+    display: block;
+    height: 20px;
+    background: url("./images/line.png") no-repeat center;
+    background-size: contain;
+}
+
+
+/* The Forth Div */
+
+
+.WorKWith
+{
+    background-color: #533537;
+    background: url(https://html.bolvosites.com/site-templates/cakery/images/backgrounds/a.jpg) no-repeat fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.WorKWith h2{
+    width: 100%;
+    font-size: 4rem;
+    font-family: "Dancing Script", serif;
+    color: white;
+    
+
+}
+
+/* The Fifth Div */
+
+.PopularCake{
+    display: flex;
+    flex-direction: column;
+}
+.PopularCake article h3{
+    color:#533537;
+    text-align: center;
+}
+.PopularCake hgroup {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PopularCake article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/b.gif);
+}
+
+.PopularCake article div{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+}
+.PopularCake article img{
+width: 100%;
+}
+.PopularCake article div:hover{
+    background-color:rgb(170, 95, 164) ;
+    background-image: url(https://html.bolvosites.com/site-templates/cakery/images/patterns/d.gif);
+    background-repeat: repeat;
+    transform: scale(0.9);
+
+}
+
+/* Sixth Div */
+.customer
+{
+    background: url(https://html.bolvosites.com/site-templates/cakery/images/backgrounds/b.jpg) fixed center center no-repeat #000   ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    
+    
+}
+.customer span
+{
+    font-family: "Satisfy", serif;
+    font-size: 2.5em;
+    color: rgb(223, 219, 222);
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+.CustomerPara
+{
+    max-width: 700px;
+    color: rgb(223, 219, 222);
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.8;
+}
+.customer figure {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.customer figure img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+
+
+
+.beforeFootor {
+    margin-top: -43px; /* Adjust the value to move it up */
+    background-image: url(./Images/Purble.png) ;
+    text-align: center; /* Center the image */
+    height: 37px;
+}
+/* Footer Styling */
+footer {
+    background-color: rgb(170, 95, 164) ;
+    color: white;
+    padding: 40px 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.footer-continer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.content-info h2 ,.Popular-links h2,.work-time h2,.Subscribe h2{
+    color: #533537;
+} 
+
+.footer-continer div {
+    padding: 10px;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+input[type="email"] {
+    width: 100%; 
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+.Subscribe {
+    position: relative;
+}
+.Subscribe i {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.footer-copyright {
+  display: grid;
+  grid-template-columns: 1fr; /* Stack elements in one column by default */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logos ul {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.logos img {
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    .footer-continer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-copyright{
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+}
+@media (min-width: 768px) {
+  .footer-copyright {
+      grid-template-columns: 1fr 1fr; 
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-copyright {
+      grid-template-columns: 2fr 1fr; 
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-continer {
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+  
+  .footer-copyright {
+      grid-template-columns: 1fr;
+      text-align: center;
+  }
+  
+  .logos ul {
+      justify-content: center;
+  }
+}
+
+/* grid style  */
+
+.col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  
+@media (min-width: 480.99px) and (max-width: 911px) {
+    /* col_num /12 *100 */
+
+    .col-md-1 {
+        width: 8.33%;
+      }
+      .col-md-2 {
+        width: 16.66%;
+      }
+      .col-md-3 {
+        width: 25%;
+      }
+      .col-md-4 {
+        width: 33.33%;
+      }
+      .col-md-5 {
+        width: 41.66%;
+      }
+      .col-md-6 {
+        width: 50%;
+      }
+      .col-md-7 {
+        width: 58.33%;
+      }
+      .col-md-8 {
+        width: 66.66%;
+      }
+      .col-md-9 {
+        width: 75%;
+      }
+      .col-md-10 {
+        width: 83.33%;
+      }
+      .col-md-11 {
+        width: 91.66%;
+      }
+      .col-md-12 {
+        width: 100%;
+      }
+    .logoHeader img {
+      display: none;
+    }
+
+
+    .navbar ul li a {
+      font-size: 13px;
+  }
+
+
+    
+  }
+  
+  @media screen and (max-width: 480px) {
+
+    .col-md-1 {
+        width: 8.33%;
+      }
+      .col-md-2 {
+        width: 16.66%;
+      }
+      .col-md-3 {
+        width: 25%;
+      }
+      .col-md-4 {
+        width: 33.33%;
+      }
+      .col-md-5 {
+        width: 41.66%;
+      }
+      .col-md-6 {
+        width: 50%;
+      }
+      .col-md-7 {
+        width: 58.33%;
+      }
+      .col-md-8 {
+        width: 66.66%;
+      }
+      .col-md-9 {
+        width: 75%;
+      }
+      .col-md-10 {
+        width: 83.33%;
+      }
+      .col-md-11 {
+        width: 91.66%;
+      }
+      .col-md-12 {
+        width: 100%;
+      }
+    
+    .logoHeader img {
+      display: none;
+
+    }
+    .navbar ul {
+        gap: 5px;
+        
+      }
+      .navbar ul li a {
+        font-size: 5px;
+  }
+
+  }
+  
+
